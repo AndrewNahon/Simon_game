@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Simon</title>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide|Iceland|Monoton|Pacifico|Press+Start+2P|Vampiro+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src='underscore.js' type="text/javascript"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+    <script src='app.js' type="text/javascript"></script>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div id='winning-msg'>
+      <h3>You win!</h3>
+    </div>
+    <main>
+      <div class='game-container'>
+        <div id='1' class='button top-left'>
+          <audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" autostart="false" ></audio>
+        </div>
+        <div id='2' class='button top-right'>
+          <audio src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" autostart="false" ></audio>
+        </div>
+        <div id='3' class='button bottom-left'>
+          <audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" autostart="false" ></audio>
+        </div>
+        <div id='4' class='button bottom-right'>
+          <audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" autostart="false" ></audio>
+        </div>
+        <div class='control-panel'>
+          <h2 class='text-center text-uppercase'>Simon</h2>
+          <dl id='count'>
+            <dd><div><span></span></div></dd>
+            <dt>count</dt>
+          </dl>
+          <dl id='start'>
+            <dd><button></button></dd>
+            <dt><label>start</label></dt>
+          </dl>
+          <dl id='strict'>
+            <div class='strict-light'></div>
+            <dd><button></button></dd>
+            <dt><label>Strict</label></dt>
+          </dl>
+          <div id='on-switch' class="checkbox">
+            <label>
+              <input type="checkbox" data-toggle="toggle">
+            </label>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <audio id='error-sound' src="error.mp3" autostart="false" ></audio>
+  <script type="text/javascript">simon.init();</script>
+</html>

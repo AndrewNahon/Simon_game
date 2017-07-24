@@ -1,0 +1,152 @@
+html  {
+  background-color: #fff;
+  padding-top: 100px;
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.game-container {
+  position: relative;
+  margin: 0 auto;
+  background-color: #020202;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 10px solid #020202;
+}
+
+.button {
+  width: 48%;
+  height: 48%;
+  float: left;
+  background-color: #fff;
+}
+
+.top-left {
+  border-top-left-radius: 200px;
+  margin-right: 4%;
+  background-color: #00a74a;
+}
+
+.top-right {
+  border-top-right-radius: 200px;
+  background-color: #9f0f17;
+  margin-bottom: 4%;
+}
+
+.bottom-left {
+  border-bottom-left-radius: 200px;
+  background-color: #cca707;
+  margin-right: 4%;
+}
+
+.bottom-right {
+  border-bottom-right-radius: 200px;
+  background-color: #094a8f;
+}
+
+.control-panel {
+  position: absolute;
+  top: 65px;
+  left: 65px;
+  height: 250px;
+  width: 250px;
+  background-color: #fff;
+  border-radius: 200px;
+  border: 10px solid #020202;
+  text-transform: uppercase;
+}
+
+.control-panel h2 {
+  margin-bottom: 30px;
+}
+
+.control-panel dl {
+  display: inline-block;
+  text-align: center;
+  width: 32%;
+}
+
+#count div {
+  margin: 0 10px;
+  border-radius: 4px;
+  background-color: #020202;
+  color: #b22222;
+  width: 52px;
+  height: 22px;
+}
+
+#count span {
+  color: #b22222;
+}
+
+#start button {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: red;
+}
+
+#strict {
+  position: relative;
+}
+
+#strict .strict-light {
+  position: absolute;
+  top: -15px;
+  left: 32px;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+#strict button {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: yellow;
+  outline:none;
+}
+
+#on-switch {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.yellow-light{
+  background-color : #fed93f;
+}
+
+.blue-light{
+  background-color : #1c8cff;
+}
+
+.red-light{
+  background-color : #ff4c4c;
+}
+
+.green-light{
+  background-color : #13ff7c;
+}
+
+#winning-msg {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #ffb6c1;
+  z-index: 100;
+}
+
+#winning-msg h3 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 25%;
+}
